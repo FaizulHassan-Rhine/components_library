@@ -614,7 +614,7 @@ nav ul {
 }
 
 nav ul li {
-  --c: goldenrod;
+  --c: purple;
   color: var(--c);
   font-size: 16px;
   border: 0.3em solid var(--c);
@@ -648,7 +648,7 @@ nav ul li span {
 }
 
 nav ul li:hover {
-  color: black;
+  color: white;
 }
 
 nav ul li:hover span {
