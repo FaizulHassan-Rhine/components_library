@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Components/Button/Button";
+import Button from "./Components/Button/Button_2";
 import Home from "./Components/Home/Home";
 import ImageViewer from "./Components/ImageViewer/ImageViewer";
 import VideoViewer from "./Components/VideoViewer/VideoViewer";
