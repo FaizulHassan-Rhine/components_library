@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import ImageViewer from "./Components/ImageViewer/ImageViewer";
 import VideoViewer from "./Components/VideoViewer/VideoViewer";
 import ProductColorChange from "./Components/ProductColorChange/ServiceExplore";
+import ProcessBar from "./Components/ProcessBar/ProcessBar";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <ImageViewer></ImageViewer> */}
       {/* <VideoViewer></VideoViewer> */}
       {/* <ProductColorChange></ProductColorChange> */}
-      <Button></Button>
+      {/* <Button></Button> */}
+      <ProcessBar></ProcessBar>
     </div>
   );
 }
