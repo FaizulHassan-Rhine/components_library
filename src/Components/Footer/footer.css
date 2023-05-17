@@ -1,0 +1,11 @@
+#footer{
+    background-image: url('../../images/footer_banner.png');
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1023px)  {
+    #footer{
+        background-image: url('../../images/footer_banner.png');
+        background-size: cover;
+    }
+}
