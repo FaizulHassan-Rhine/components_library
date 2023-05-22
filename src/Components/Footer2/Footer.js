@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
             <Link to="/">
               <img
                 className="h-8 w-20 ml-20 md:ml-0 lg:ml-0"
-                src={logo}
+                // src={logo}
                 alt=""
               />
             </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             <Link to='/' className="link link-hover ">Home</Link>
             {/* <Link to='/#service' className="link link-hover">Features</Link> */}
             <a href='#service' className="link link-hover">Services</a>
-            <Link to='/quote'  className="link link-hover">Pricing</Link>
+            <Link to='/quote' className="link link-hover">Pricing</Link>
             {/* <a className="link link-hover">Blogs</a> */}
           </div>
           {/* <div className="text-center ml-10 md:ml-0 lg:ml-0">

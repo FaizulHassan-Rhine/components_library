@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../../images/Retouched_Logo.png'
-import './footer.css'
-import { Link } from "react-router-dom";
+// import logo from '../../images/Retouched_Logo.png'
+// import './footer.css'
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                 <footer className="footer container pt-24 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
-                            <img className="h-6 w-36  mb-2" src={logo} alt="" />
+                            {/* <img className="h-6 w-36  mb-2" src={logo} alt="" /> */}
                         </figure>
                         <p className="w-40 p-1 border-b-2 border-white text-sm mb-4">
                             All-in-one photo editor for easy editing and better design.
