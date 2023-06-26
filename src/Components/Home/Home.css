@@ -1,4 +1,4 @@
-.facebook {
+/* .facebook {
   color: white;
   background: #285da1;
   z-index: 1;
@@ -47,4 +47,4 @@ button::after {
 button:hover::after {
   transform: skewX(45deg) scaleX(2);
   transition: all 0.4s ease-out 0s;
-}
+} */

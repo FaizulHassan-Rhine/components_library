@@ -9,6 +9,8 @@ import ProcessBar from "./Components/ProcessBar/ProcessBar";
 import CostBreakDown from "./Components/CostBreakDown/CostBreakDown";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import PriceCard from "./Components/PriceCard/PriceCard";
+import Modal from "./Components/Modal/Modal";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       {/* <CostBreakDown></CostBreakDown> */}
       {/* <Footer></Footer> */}
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        {/* <Route path="/" element={<Navbar />} /> */}
+        <Route path="/price-card" element={<PriceCard />} />
+        <Route path="/modal" element={<Modal />} />
         {/* <Route path="/" element={<Home />} /> */}
 
       </Routes>
