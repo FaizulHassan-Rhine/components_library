@@ -3,7 +3,7 @@ import { FaPinterestP, FaFacebookF, FaTwitter } from "react-icons/fa";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="bg-black flex justify-center items-center">
+    <div className="bg-slate-300 flex justify-center items-center">
       <button
         href="#"
         className=" h-12 w-12 text-center  rounded-md m-5 relative overflow-hidden facebook "

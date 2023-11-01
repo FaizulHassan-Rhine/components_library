@@ -11,6 +11,9 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import PriceCard from "./Components/PriceCard/PriceCard";
 import Modal from "./Components/Modal/Modal";
+import Question from "./Components/Question/Question";
+import TestAnimation from "./Components/TestAnimation/TestAnimation";
+import MegaNavbar from "./Components/MegaNavbar/MegaNavbar";
 
 function App() {
   return (
@@ -21,12 +24,16 @@ function App() {
       {/* <ProductColorChange></ProductColorChange> */}
       {/* <Button></Button> */}
       {/* <ProcessBar></ProcessBar> */}
-      {/* <CostBreakDown></CostBreakDown> */}
+      <CostBreakDown></CostBreakDown>
+      {/* <MegaNavbar/> */}
       {/* <Footer></Footer> */}
+      {/* <TestAnimation></TestAnimation> */}
       <Routes>
         {/* <Route path="/" element={<Navbar />} /> */}
         <Route path="/price-card" element={<PriceCard />} />
         <Route path="/modal" element={<Modal />} />
+        <Route path="/question" element={<Question />} />
+
         {/* <Route path="/" element={<Home />} /> */}
 
       </Routes>
