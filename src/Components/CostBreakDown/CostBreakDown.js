@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import logo from '../../images/logo.png'
 
@@ -110,6 +111,9 @@ const CostBreakDown = () => {
                         <p className="font-semibold">$0.00</p>
                         <p className="font-semibold">$9.00</p>
                     </div>
+                </div>
+                <div className="flex justify-end w-[600px]  mt-8 mx-auto">
+                    <Link to={"/price-card"} className="bg-green-600 text-white px-4 py-2 rounded-full">Data Test</Link>
                 </div>
                 <div className="w-[700px] mx-auto mt-20 " >
                     <hr className="mb-3"></hr>
