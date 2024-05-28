@@ -161,7 +161,7 @@ const ImageSlider = ({ images }) => {
             </div>
 
             <div className="">
-                <h2 className="text-xl font-bold">Select for rework</h2>
+                <h2 className="text-xl font-bold">Selected for rework</h2>
                 <div className="flex overflow-x-auto py-4 space-x-4">
                     {selectedImages && selectedImages.map((image, index) => (
                         <div key={index} className="relative flex-shrink-0">
@@ -174,6 +174,13 @@ const ImageSlider = ({ images }) => {
                         </div>
                     ))}
                 </div>
+                {selectedImages.length > 0 && (
+                    
+                
+                <div className='flex justify-center items-center'>
+                    <button className='bg-yellow-500 text-white px-4 py-2 rounded-3xl'>Send for rework</button>
+                </div>
+                )}
             </div>
 
             {selectedImage && (
