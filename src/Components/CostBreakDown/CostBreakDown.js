@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import GoogleTranslate from "../GoogleTranslate/GoogleTranslate";
+import { IoLanguage } from "react-icons/io5";
 // import logo from '../../images/logo.png'
-
+import { IoMdArrowDropdown } from "react-icons/io";
+import england from "../../Images/united-kingdom.png"
+import spain from "../../Images/spain.png"
+import france from "../../Images/france.png"
+import germany from "../../Images/germany.png"
+import dutch from "../../Images/netherlands.png"
 const CostBreakDown = () => {
-
-
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const { handleTranslate } = GoogleTranslate();
+  
+    const selectLanguage = (lang) => {
+      handleTranslate(lang);
+      setDropdownOpen(false);
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000); // Adjust the delay to ensure the language change is fully applied
+    };
 
     return (
         <div className="container mx-auto">
@@ -14,6 +28,79 @@ const CostBreakDown = () => {
                     {/* <img className="h-8 w-44 mb-2" src={logo} alt="" /> */}
                     <p className="text-3xl font-bold">COST BREAKDOWN</p>
                 </div>
+                <div id="google_translate_element" style={{ display: "none" }}></div>
+      <div className="relative inline-block text-center notranslate ">
+        <div className="">
+        
+          <button
+            type="button"
+            className="flex justify-center text-xl items-center gap-2 w-40 rounded-md border border-gray-300 shadow-sm px-2 py-2   font-medium text-gray-700 hover:bg-gray-50 focus:outline-none "
+            id="options-menu"
+            aria-expanded="true"
+            aria-haspopup="true"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            defaultValue="en"
+          >
+            <IoLanguage className="text-xl"/>
+            Language
+           < IoMdArrowDropdown className="text-xl"/>
+          </button>
+        </div>
+
+        {dropdownOpen && (
+          <div
+            className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="options-menu"
+          >
+            <div className="py-1 " role="none">
+              <button
+                onClick={() => selectLanguage('en')}
+                className="flex justify-start items-center gap-3 px-4 py-2 text-xl text-gray-700 hover:bg-gray-100 w-full text-center"
+                role="menuitem"
+              >
+                <img className="h-7 w-7" src={england} alt=""/>
+                English
+              </button>
+              
+              <button
+                onClick={() => selectLanguage('es')}
+                className="flex justify-start items-center gap-3 px-4 py-2 text-xl text-gray-700 hover:bg-gray-100 w-full text-center"
+                role="menuitem"
+              >
+                <img className="h-7 w-7" src={spain} alt=""/>
+                Spanish
+              </button>
+              <button
+                onClick={() => selectLanguage('fr')}
+                className="flex justify-start items-center gap-3 px-4 py-2 text-xl text-gray-700 hover:bg-gray-100 w-full text-center"
+                role="menuitem"
+              >
+                <img className="h-7 w-7" src={france} alt=""/>
+                French
+              </button>
+              <button
+                onClick={() => selectLanguage('de')}
+                className="flex justify-start items-center gap-3 px-4 py-2 text-xl text-gray-700 hover:bg-gray-100 w-full text-center"
+                role="menuitem"
+              >
+                <img className="h-7 w-7" src={germany} alt=""/>
+                German
+              </button>
+              <button
+                onClick={() => selectLanguage('nl')}
+                className="flex justify-start items-center gap-3 px-4 py-2 text-xl text-gray-700 hover:bg-gray-100 w-full text-center"
+                role="menuitem"
+              >
+                <img className="h-7 w-7" src={dutch} alt=""/>
+                Dutch
+              </button>
+
+            </div>
+          </div>
+        )}
+      </div>
                 <div className="flex justify-center mx-auto mt-10 gap-36 border-black border py-5 w-[600px] ">
                     <div className="flex justify-between gap-5">
                         <div><p className="font-semibold">Date:</p>
