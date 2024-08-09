@@ -18,6 +18,7 @@ import ColorChange from "./Components/ColorChange/ColorChange";
 import ContactUsLanding from "./Components/ContactUsLanding/ContactUsLanding";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 import ScrollAnimation from "./Components/ScrollAnimation/ScrollAnimation";
+import VideoWithClickableButton from "./Components/VideoWithClickableButton/VideoWithClickableButton";
 
 
 
@@ -39,6 +40,7 @@ function App() {
       {/* <Home></Home> */}
       {/* <ImageViewer></ImageViewer> */}
       {/* <VideoViewer></VideoViewer> */}
+      <VideoWithClickableButton/>
       {/* <ProductColorChange></ProductColorChange> */}
       {/* <Button></Button> */}
       {/* <ProcessBar></ProcessBar> */}
@@ -52,12 +54,12 @@ function App() {
       {/* <ImageSlider/> */}
       <Routes>
         {/* <Route path="/" element={<Navbar />} /> */}
-        <Route path="/price-card" element={<PriceCard />} />
+        {/* <Route path="/price-card" element={<PriceCard />} />
         <Route path="/modal" element={<Modal />} />
         <Route path="/scroll-animation" element={<ScrollAnimation/>} />
         <Route path="/question" element={<Question />} />
 
-        <Route path="/cost" element={<CostBreakDown />} />
+        <Route path="/cost" element={<CostBreakDown />} /> */}
         {/* <Route path="/" element={<Home />} /> */}
 
       </Routes>
