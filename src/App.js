@@ -17,6 +17,8 @@ import MegaNavbar from "./Components/MegaNavbar/MegaNavbar";
 import ColorChange from "./Components/ColorChange/ColorChange";
 import ContactUsLanding from "./Components/ContactUsLanding/ContactUsLanding";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
+import ScrollAnimation from "./Components/ScrollAnimation/ScrollAnimation";
+
 
 
 
@@ -46,11 +48,13 @@ function App() {
       {/* <TestAnimation></TestAnimation> */}
       {/* <ColorChange/> */}
       {/* <ContactUsLanding/> */}
-      <ImageSlider/>
+      
+      {/* <ImageSlider/> */}
       <Routes>
         {/* <Route path="/" element={<Navbar />} /> */}
         <Route path="/price-card" element={<PriceCard />} />
         <Route path="/modal" element={<Modal />} />
+        <Route path="/scroll-animation" element={<ScrollAnimation/>} />
         <Route path="/question" element={<Question />} />
 
         <Route path="/cost" element={<CostBreakDown />} />

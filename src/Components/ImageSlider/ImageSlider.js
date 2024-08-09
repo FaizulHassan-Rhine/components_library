@@ -23,7 +23,7 @@ const reworkImages = [
   'https://cdn.pixabay.com/photo/2018/04/20/17/18/cat-3336579_960_720.jpg'
 ];
 
-const ImageSlider = ({ images }) => {
+const ImageSlider = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [selectedImages, setSelectedImages] = useState([]);
