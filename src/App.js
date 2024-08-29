@@ -19,6 +19,7 @@ import ContactUsLanding from "./Components/ContactUsLanding/ContactUsLanding";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 import ScrollAnimation from "./Components/ScrollAnimation/ScrollAnimation";
 import VideoWithClickableButton from "./Components/VideoWithClickableButton/VideoWithClickableButton";
+import FlyingAnimation from "./Components/FlyingAnimation/FlyingAnimation";
 
 
 
@@ -40,7 +41,9 @@ function App() {
       {/* <Home></Home> */}
       {/* <ImageViewer></ImageViewer> */}
       {/* <VideoViewer></VideoViewer> */}
-      <VideoWithClickableButton/>
+      <FlyingAnimation/>
+    
+      {/* <VideoWithClickableButton/> */}
       {/* <ProductColorChange></ProductColorChange> */}
       {/* <Button></Button> */}
       {/* <ProcessBar></ProcessBar> */}
