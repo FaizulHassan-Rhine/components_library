@@ -39,6 +39,7 @@ const BCBFacebookEmbed = () => {
 
          {/* Facebook Embed */}
         <div className="w-full  mx-auto border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-white dark:bg-gray-800 p-4">
+      <h1 className='text-2xl font-bold pb-3 text-orange-500'>Facebook Embed Using FB SDK</h1>
           <div
             className="fb-page w-[500px] h-[500px]"
             data-href="https://www.facebook.com/bcbtigercricket"
@@ -62,7 +63,9 @@ const BCBFacebookEmbed = () => {
         </div>
 
         {/* Facebook Iframe Embed */}
+       
         <div className="w-full  mx-auto border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-white dark:bg-gray-800 p-4">
+          <h1 className='text-2xl font-bold pb-3 text-orange-500'>Facebook Embed Using Iframe</h1>
           <div className="w-full flex justify-center">
             <iframe
               title="BCB Facebook Page"
