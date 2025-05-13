@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .bg-img{
-    background-image: url('https://encdn.bd-pratidin.com/public/news_images/2025/03/04/1741080956-3beb1cf8e59dd6c1a4235390ee193c94.jpg');
-    background-size: cover;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MLvxWOcDHbDKKHtBYGo6ujuncAGXzsgMNA&s');
+    background-size: contain;
     background-position: center;
     height: 50vh;
 }
