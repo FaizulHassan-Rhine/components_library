@@ -21,6 +21,7 @@ import ScrollAnimation from "./Components/ScrollAnimation/ScrollAnimation";
 import VideoWithClickableButton from "./Components/VideoWithClickableButton/VideoWithClickableButton";
 import FlyingAnimation from "./Components/FlyingAnimation/FlyingAnimation";
 import BubblyButton from "./Components/Button/button_4";
+import FacebookEmbed from "./Components/FacebookPageEmbedded/FacebookPageEmbedded";
 
 
 
@@ -43,8 +44,8 @@ function App() {
       {/* <ImageViewer></ImageViewer> */}
       {/* <VideoViewer></VideoViewer> */}
       {/* <FlyingAnimation/> */}
-      <BubblyButton/>
-    
+      {/* <BubblyButton/> */}
+    <FacebookEmbed/>
       {/* <VideoWithClickableButton/> */}
       {/* <ProductColorChange></ProductColorChange> */}
       {/* <Button></Button> */}
