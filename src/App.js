@@ -22,6 +22,12 @@ import VideoWithClickableButton from "./Components/VideoWithClickableButton/Vide
 import FlyingAnimation from "./Components/FlyingAnimation/FlyingAnimation";
 import BubblyButton from "./Components/Button/button_4";
 import FacebookEmbed from "./Components/FacebookPageEmbedded/FacebookPageEmbedded";
+import MultiBallGravity from "./Components/MatterFallingAnimation/MatterFallingAnimation";
+import LoadingScreen from "./Components/GsapLoading/GsapLoading";
+import GsapImageScroll from "./Components/GsapImageScroll/GsapImageScroll";
+import ScrollCircleAnimation from "./Components/GsapScrollAnimation/GsapScrollAnimation";
+import TimeBasedTheme from "./Components/TimeBasedTheme/TimeBasedTheme";
+import FluidNavbar from "./Components/FluidNavbar/FluidNavbar";
 
 
 
@@ -45,7 +51,13 @@ function App() {
       {/* <VideoViewer></VideoViewer> */}
       {/* <FlyingAnimation/> */}
       {/* <BubblyButton/> */}
-    <FacebookEmbed/>
+    {/* <FacebookEmbed/> */}
+    {/* <MultiBallGravity/> */}
+    {/* <LoadingScreen/> */}
+    {/* <ScrollCircleAnimation/> */}
+    {/* <TimeBasedTheme/> */}
+    <FluidNavbar/>
+    {/* <GsapImageScroll/> */}
       {/* <VideoWithClickableButton/> */}
       {/* <ProductColorChange></ProductColorChange> */}
       {/* <Button></Button> */}
